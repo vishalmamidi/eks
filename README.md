@@ -4,6 +4,13 @@
 https://github.com/weaveworks/eksctl
 https://eksctl.io/
 
+`--dry-run` for dry run
+### using command line 
+```bash
+eksctl create cluster --name=dev-eks-cluster01 --nodegroup-name=linux-nodes --node-type=t2.micro --region=us-east-1 --nodes=1 --tags environment=dev
+```
+
+### using yaml 
 ```
 eksctl create cluster -f cluster.yaml
 ```
